@@ -1,0 +1,80 @@
+[
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "GetClases",
+    "RelativePath": "API/Service/GET_LIST_CLASES",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "GetClientes",
+    "RelativePath": "API/Service/GET_LIST_CLIENTES",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "GetEntrenadores",
+    "RelativePath": "API/Service/GET_LIST_ENTRENADORES",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "GetUsuarioByIdAsync",
+    "RelativePath": "API/Service/GET_USER_BY_ID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ID",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "Login",
+    "RelativePath": "API/Service/LOGIN",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "USUARIO",
+        "Type": "VFProyect_BACK.Models.REQUESTS.LoginUserRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "ValidarToken",
+    "RelativePath": "API/Service/VALIDATION_TOKEN",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "TOKEN",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
