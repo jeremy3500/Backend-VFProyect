@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\VFProyect_BACK.csproj": {}
+    "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\VFProyect_BACK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\VFProyect_BACK.csproj": {
+    "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\VFProyect_BACK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\VFProyect_BACK.csproj",
+        "projectUniqueName": "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\VFProyect_BACK.csproj",
         "projectName": "VFProyect_BACK",
-        "projectPath": "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\VFProyect_BACK.csproj",
+        "projectPath": "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\VFProyect_BACK.csproj",
         "packagesPath": "C:\\Users\\jmoyah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\obj\\",
+        "outputPath": "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

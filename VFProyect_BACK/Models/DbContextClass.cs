@@ -19,5 +19,6 @@ namespace VFProyect_BACK.Models
         public virtual  DbSet<ClienteResponse> Cliente { get; set; }
         public virtual  DbSet<EntrenadorResponse> Entrenador { get; set; }
         public virtual  DbSet<ClaseResponse> Clase { get; set; }
+
     }
 }

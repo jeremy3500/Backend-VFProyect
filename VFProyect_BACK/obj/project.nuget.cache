@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QW6RYbcvVt8=",
+  "dgSpecHash": "vO1xGStC5VI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\jmoyah\\Documents\\TRABAJO\\VFProyect_BACK\\VFProyect_BACK\\VFProyect_BACK.csproj",
+  "projectFilePath": "C:\\PROYECTOS-FORK\\Backend-VFProyect\\VFProyect_BACK\\VFProyect_BACK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\jmoyah\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\jmoyah\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

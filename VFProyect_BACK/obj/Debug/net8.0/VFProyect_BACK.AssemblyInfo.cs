@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("VFProyect_BACK")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d717783cf9a19af70b6e2e49632639975613187e")]
 [assembly: System.Reflection.AssemblyProductAttribute("VFProyect_BACK")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VFProyect_BACK")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

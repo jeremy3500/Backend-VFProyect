@@ -132,5 +132,63 @@ namespace VFProyect_BACK.Controllers
             });
         }
 
+
+        [HttpPost("INSERT_INSTRUCTOR")]
+        public async Task<IActionResult> InsertEntrenador(EntrenadorRequest ENTRENADOR)
+        {
+            if (ENTRENADOR == null) return BadRequest();
+            try
+            {
+                var RESPONSE = await usuarioService.InsertEntrenador(ENTRENADOR);
+
+                string wMESSAGE = "";
+                if (RESPONSE.Count() > 0) wMESSAGE = "SUCCESFULL";
+
+                return Ok(new
+                {
+                    SUCCESS = true,
+                    MESSAGE = wMESSAGE
+
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new
+                {
+                    SUCCESS = false,
+                    MESSAGE = ex.Message
+
+                });
+            }
+        }
+
+        [HttpPost("INSERT_CLIENTE")]
+        public async Task<IActionResult> InsertCliente(ClienteRequest CLIENTE)
+        {
+            if (CLIENTE == null) return BadRequest();
+            try
+            {
+                var RESPONSE = await usuarioService.InsertCliente(CLIENTE);
+
+                string wMESSAGE = "";
+                if (RESPONSE.Count() > 0) wMESSAGE = "SUCCESFULL";
+
+                return Ok(new
+                {
+                    SUCCESS = true,
+                    MESSAGE = wMESSAGE
+
+                });
+            }
+            catch (Exception ex)
+            {
+                return Ok(new
+                {
+                    SUCCESS = false,
+                    MESSAGE = ex.Message
+
+                });
+            }
+        }
     }
 }

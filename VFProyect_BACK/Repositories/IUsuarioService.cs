@@ -10,6 +10,8 @@ namespace VFProyect_BACK.Repositories
         public Task<List<ClaseResponse>> GetClases();
         public Task<IEnumerable<UsuarioResponse>> GetUsuarioByIdAsync(int UsuarioId);
         public Task<List<UsuarioResponse>> Login(LoginUserRequest usuario);
+        public Task<List<EntrenadorResponse>> InsertEntrenador(EntrenadorRequest ENTRENADOR);
+        public Task<List<ClienteResponse>> InsertCliente(ClienteRequest CLIENTE);
 
     }
 }

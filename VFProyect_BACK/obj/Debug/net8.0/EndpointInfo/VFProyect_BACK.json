@@ -114,10 +114,128 @@
           }
         }
       }
+    },
+    "/API/Service/INSERT_INSTRUCTOR": {
+      "post": {
+        "tags": [
+          "Service"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntrenadorRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntrenadorRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EntrenadorRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/API/Service/INSERT_CLIENTE": {
+      "post": {
+        "tags": [
+          "Service"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ClienteRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
     }
   },
   "components": {
     "schemas": {
+      "ClienteRequest": {
+        "type": "object",
+        "properties": {
+          "NOMBRE": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "TELEFONO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOCUMENTO": {
+            "type": "string",
+            "nullable": true
+          },
+          "SEXO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ID_MEMBRESIA": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EntrenadorRequest": {
+        "type": "object",
+        "properties": {
+          "NOMBRE": {
+            "type": "string",
+            "nullable": true
+          },
+          "EMAIL": {
+            "type": "string",
+            "nullable": true
+          },
+          "TELEFONO": {
+            "type": "string",
+            "nullable": true
+          },
+          "DOCUMENTO": {
+            "type": "string",
+            "nullable": true
+          },
+          "ESPECIALIDAD": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginUserRequest": {
         "type": "object",
         "properties": {

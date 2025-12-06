@@ -50,11 +50,44 @@ namespace VFProyect_BACK.Repositories
             var PARAMETERS = new List<SqlParameter>
             {
                 new SqlParameter("@EMAIL", USUARIO.EMAIL),
-                new SqlParameter("@PASSWORDS", USUARIO.PASSWORD)
+                new SqlParameter("@PASSWORD", USUARIO.PASSWORD)
             };
 
             return await _dbContext.Usuario
-                .FromSqlRaw(@"EXEC SP_LoggerUsuario @EMAIL, @PASSWORDS", PARAMETERS.ToArray())
+                .FromSqlRaw(@"EXEC [sp_LoginUsuario] @EMAIL, @PASSWORD", PARAMETERS.ToArray())
+            .ToListAsync();
+        }
+
+        public async Task<List<EntrenadorResponse>> InsertEntrenador(EntrenadorRequest ENTRENADOR)
+        {
+            var PARAMETERS = new List<SqlParameter>
+            {
+                new SqlParameter("@Nombre", ENTRENADOR.NOMBRES),
+                new SqlParameter("@Email", ENTRENADOR.EMAIL),
+                new SqlParameter("@Telefono", ENTRENADOR.TELEFONO),
+                new SqlParameter("@Documento", ENTRENADOR.DOCUMENTO),
+                new SqlParameter("@Especialidad", ENTRENADOR.ESPECIALIDAD)
+            };
+
+            return await _dbContext.Entrenador
+                .FromSqlRaw(@"EXEC [sp_RegistrarEntrenador] @Nombre, @Email, @Telefono, @Documento, @Especialidad", PARAMETERS.ToArray())
+            .ToListAsync();
+        }
+
+        public async Task<List<ClienteResponse>> InsertCliente(ClienteRequest CLIENTE)
+        {
+            var PARAMETERS = new List<SqlParameter>
+            {
+                new SqlParameter("@Nombre", CLIENTE.NOMBRE),
+                new SqlParameter("@Email", CLIENTE.EMAIL),
+                new SqlParameter("@Telefono", CLIENTE.TELEFONO),
+                new SqlParameter("@NumeroDocumento", CLIENTE.DOCUMENTO),
+                new SqlParameter("@Sexo", CLIENTE.SEXO),
+                new SqlParameter("@IdMembresia", CLIENTE.ID_MEMBRESIA)
+            };
+
+            return await _dbContext.Cliente
+                .FromSqlRaw(@"EXEC [sp_RegistrarCliente] @Nombre, @Email, @Telefono, @NumeroDocumento, @Sexo, @IdMembresia", PARAMETERS.ToArray())
             .ToListAsync();
         }
     }

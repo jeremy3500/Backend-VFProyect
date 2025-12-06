@@ -47,6 +47,38 @@
   },
   {
     "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "InsertCliente",
+    "RelativePath": "API/Service/INSERT_CLIENTE",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CLIENTE",
+        "Type": "VFProyect_BACK.Models.REQUESTS.ClienteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
+    "Method": "InsertEntrenador",
+    "RelativePath": "API/Service/INSERT_INSTRUCTOR",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ENTRENADOR",
+        "Type": "VFProyect_BACK.Models.REQUESTS.EntrenadorRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "VFProyect_BACK.Controllers.ServiceController",
     "Method": "Login",
     "RelativePath": "API/Service/LOGIN",
     "HttpMethod": "POST",

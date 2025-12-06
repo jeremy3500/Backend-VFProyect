@@ -39,7 +39,7 @@ namespace VFProyect_BACK.Custom
             var userClaims = new[]
             {
                 new Claim(ClaimTypes.NameIdentifier, modelo.ID.ToString()),
-                new Claim(ClaimTypes.Email, modelo.EMAIL!)
+                new Claim(ClaimTypes.Email, modelo.NOMBRES!)
             };
 
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:key"]!));
